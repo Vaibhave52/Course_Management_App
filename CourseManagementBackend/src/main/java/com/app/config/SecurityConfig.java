@@ -121,7 +121,10 @@ public class SecurityConfig {
    @Bean
 	public CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration configuration = new CorsConfiguration();
-		configuration.setAllowedOrigins(List.of("http://localhost:5174")); // frontend URL
+		configuration.setAllowedOrigins(List.of("http://localhost:5174",
+												"https://course-management-app-iota.vercel.app/",
+												"https://course-management-app-git-main-vaibhav-ramtekes-projects.vercel.app/",
+												"https://course-management-huy8ys35u-vaibhav-ramtekes-projects.vercel.app/")); // frontend URL
 		configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 		configuration.setAllowedHeaders(List.of("*"));
 		configuration.setAllowCredentials(true);
