@@ -1,0 +1,15 @@
+# Ignore everything
+/*
+
+# Keep gitignore itself
+!.gitignore
+
+# Allow the project folder
+!/CourseManagementBackend/
+!/FrontEnd/
+
+# Inside MyProject, allow only pom.xml and src
+/CourseManagementBackend/*
+!/CourseManagementBackend/pom.xml
+!/CourseManagementBackend/src/
+!/CourseManagementBackend/src/**
