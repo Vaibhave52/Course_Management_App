@@ -13,3 +13,12 @@
 !/CourseManagementBackend/pom.xml
 !/CourseManagementBackend/src/
 !/CourseManagementBackend/src/**
+
+# Explicitly ignore backend build output
+/CourseManagementBackend/target/
+
+
+# Common OS / Editor files
+.DS_Store
+.idea/
+.vscode/
