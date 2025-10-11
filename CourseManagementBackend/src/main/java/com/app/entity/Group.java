@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
@@ -40,7 +41,7 @@ public class Group extends BaseEntity {
 			"students" })
 	private Course course;
 
-	@ManyToMany(mappedBy = "groups")
+	@ManyToMany(mappedBy = "groups",cascade = CascadeType.ALL)
 	private List<Schedule> schedules;
 
 	@OneToMany(mappedBy = "group")
